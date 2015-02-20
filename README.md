@@ -12,3 +12,6 @@ To run app:
 
     lein ring server
 
+On the webapp:
+
+Visit `/numeronym/<word>` to generate a numeronym out of the `word`
