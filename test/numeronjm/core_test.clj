@@ -1,8 +1,8 @@
 (ns numeronjm.core-test
   (:require [clojure.test :refer :all]
-            [numeronjm.core :refer :all]))
+            [numeronjm.core :refer [make-numeronym]]))
 
-(deftest a-test
+(deftest testing-make-numeronym
   (testing "internationalization gives i18n"
     (is (= (make-numeronym "internationalization") "i18n")))
   (testing "localization gives l10n"
