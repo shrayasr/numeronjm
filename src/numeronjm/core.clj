@@ -15,7 +15,8 @@
 
 (defroutes app-routes
   (GET "/"                  [] "run <pre>/numeronym/&lt;word&gt;</pre> for
-                               generating a numeronym")
+                               generating a numeronym<br/><hr/>
+                               <a href='https://github.com/shrayasr/numeronjm'>Github</a>")
   (GET "/numeronym/:word"   []  (fn [request]
                                   (let [word (get-in request [:params :word])
                                         numeronym (make-numeronym word)]
