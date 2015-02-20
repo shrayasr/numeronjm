@@ -4,4 +4,11 @@ Web application to generate numeronyms from a name
 
 ## Usage
 
-    lein run
+To run test:
+
+    lein test
+
+To run app:
+
+    lein ring server
+
