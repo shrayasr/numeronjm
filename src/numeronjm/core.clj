@@ -1,4 +1,11 @@
-(ns numeronjm.core)
+(ns numeronjm.core
+  (:require [compojure.core :refer :all]
+            [compojure.route :as route]
+            [ring.middleware.defaults :refer [wrap-defaults site-defaults]]))
+
+(defroutes app-routes
+  (GET "/" [] "hello world")
+  (route/not-found "not found"))
 
 (defn make-numeronym
   [input]
@@ -10,7 +17,6 @@
           (> cnt 2) (str start nums end)
           (= cnt 2) (str start end))))
 
-(defn -main
-  "main function"
-  [input_name]
-  (println (make-numeronym input_name)))
+
+(def app
+  (wrap-defaults app-routes site-defaults))
