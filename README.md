@@ -1,6 +1,7 @@
 # [Numeronjm](http://numeronjm.herokuapp.com/)
 
-Web application to generate numeronyms from a name
+Web application to generate
+[numeronyms](http://en.wikipedia.org/wiki/Numeronym) from a name
 
 ## Usage
 
