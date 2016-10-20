@@ -14,7 +14,7 @@
           (= cnt 2) (str start end))))
 
 (defroutes app-routes
-  (GET "/"                  [] "run <pre>/numeronym/&lt;word&gt;</pre> for
+  (GET "/"                  [] "go to <pre>/numeronym/&lt;word&gt;</pre> for
                                generating a numeronym<br/><hr/>
                                <a href='https://github.com/shrayasr/numeronjm'>Github</a>")
   (GET "/numeronym/:word"   []  (fn [request]
